@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebTech Creation</title>
+  <style>
+    .diamond-gradient {
+      width: 500px;
+      height: 500px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="diamond-gradient">
+    <label for="color1">Bottom Left: </label><input type="color" id="color1" value="#ffffff">
+    <label for="color2">Top Right: </label><input type="color" id="color2" value="#0000ff"><br>
+    <label for="color3">Top Left: </label><input type="color" id="color3" value="#00ff00">
+    <label for="color4">Bottom Right: </label><input type="color" id="color4" value="#ff0000"><br>
+    <button onclick="makeGradient()">Get Colors</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function makeGradient() {
+      const color1 = document.getElementById('color1').value;
+      const color2 = document.getElementById('color2').value;
+      const color3 = document.getElementById('color3').value;
+      const color4 = document.getElementById('color4').value;
+      diamondGradient(color1, color2, color3, color4);
+    }
+  </script>
+</body>
+</html>
