@@ -1,3 +1,10 @@
+function makeGradient() {
+    const color1 = document.getElementById('color1').value;
+    const color2 = document.getElementById('color2').value;
+    const color3 = document.getElementById('color3').value;
+    const color4 = document.getElementById('color4').value;
+    diamondGradient(color1, color2, color3, color4);
+}
 function diamondGradient(color1, color2, color3, color4) {
     const numSteps = 10;
     const colorList = generateColorList(color1, color2, numSteps);
